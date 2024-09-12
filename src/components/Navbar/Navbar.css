@@ -1,0 +1,84 @@
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 18px 23px;
+    height: 30px;
+    background-color: var(--white);
+    box-shadow: 2px 2px 3px 0px #dedede;
+}
+
+.nav-display{
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 5px 0px #d5d5d5;
+    border: 0.5px solid var(--grey1);
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-display:hover{
+    transform: translateY(-3px);
+}
+
+.nav-display>strong{
+    font-size: 14px;
+}
+
+.nav-display>img{
+    fill: var(--black);
+    transition: 0.5s ease-in-out;
+}
+
+.nav-display-box{
+    position: absolute;
+    display: none;
+    left: 54px;
+    top: 60px;
+    padding: 25px;
+    width: 240px;
+    height: 60px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 1px 2px 9px 2px #d5d5d5;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+
+.nav-display-box>span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-display-box>span>p{
+    font-size: 14px;
+    color: var(--grey3);
+}
+
+.nav-display-box>span>div{
+    padding: 2px;
+    background-color: var(--white);
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+    width: 110px;
+}
+
+.nav-display-box>span>div>select{
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 13px;
+    color: var(--black);
+    background-color: inherit;
+}
