@@ -111,7 +111,7 @@ export const groupBy = (groupBy,orderBy) => async (dispatch) => {
                     status: ticket.status,
                     priority: ticket.priority,
                     userName: userMap[ticket.userId].name,
-                    available: userMap[ticket.userId].available
+                    userAvailable: userMap[ticket.userId].available
                 };
             // eslint-disable-next-line
                 switch (ticket.priority) {
