@@ -8,7 +8,6 @@ export const groupBy = (groupBy,orderBy) => async (dispatch) => {
         dispatch(groupByRequest());
 
         const {data} = await axios.get(server);
-            
 
         if(groupBy === "status"){
             const groups = {

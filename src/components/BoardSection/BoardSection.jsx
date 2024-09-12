@@ -19,9 +19,9 @@ const backgroundColor = backgroundColors[Math.floor(Math.random() * 4)]
     <div className='board-section'>
       <div className='board-section-header'>
         <span>
-          {groupBy !== "userId" ? <img src={icons[group]} alt='icon' /> : <div className='profile-icon-box' style={{backgroundColor}}>{getInitials(groups[group].userName)}<span style={groups[group].userAvailable?{backgroundColor:"#0caf49"}:{backgroundColor:"#dee0e3"}}></span></div>}
-          {groupBy !== "userId" ? <h3><pre>{group}</pre></h3> : <h3><pre>{groups[group].userName}</pre></h3>}
-          {groupBy !== "userId" ? <p>{groups && groups[group].length}</p> : <p>{groups && groups[group].tickets.length}</p>}
+          {groupBy !== "userId" ? <img src={icons[group]} alt='icon' /> : <div className='profile-icon-box' style={{backgroundColor}}>{getInitials(groups[group]?.userName)}<span style={groups[group]?.userAvailable?{backgroundColor:"#0caf49"}:{backgroundColor:"#dee0e3"}}></span></div>}
+          {groupBy !== "userId" ? <h3><pre>{group}</pre></h3> : <h3><pre>{groups[group]?.userName}</pre></h3>}
+          {groupBy !== "userId" ? <p>{groups && groups[group]?.length}</p> : <p>{groups && groups[group]?.tickets?.length}</p>}
         </span>
         <span>
           <img src={icons["AddIcon"]} alt='add-icon' />
